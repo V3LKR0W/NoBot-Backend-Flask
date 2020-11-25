@@ -36,7 +36,7 @@ def verify():
     token = request.args.get('token')
     requestdata = str(request.form.get('g-recaptcha-response'))
     check = requests.post('https://www.google.com/recaptcha/api/siteverify',{
-        'secret':'6LejpbsZAAAAAJq4cNCCBk3qWV4kAVAmJgCqdU7b',
+        'secret':'',
         'response':requestdata,
     })
     json_response = json.loads(check.text)
@@ -95,7 +95,7 @@ def bugreport():
     requestdata = str(request.form.get('g-recaptcha-response'))
     
     check = requests.post('https://www.google.com/recaptcha/api/siteverify',{
-        'secret':'6LejpbsZAAAAAJq4cNCCBk3qWV4kAVAmJgCqdU7b',
+        'secret':'',
         'response':requestdata,
     })
     
