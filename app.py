@@ -17,8 +17,7 @@ Settings = {
 @app.route('/', methods=['GET'])
 def hello_world():
     return '''<h1>NoBot Backend.</h1>
-              <h2>pls dont hack me :( i'll be sad. </h2>
-              <h2>we can be friends instead! Contact me: v3lkr0w#9296</h2>'''
+           '''
 
 
 @app.errorhandler(500)
